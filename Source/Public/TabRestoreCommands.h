@@ -7,8 +7,8 @@ class FTabRestoreCommands : public TCommands<FTabRestoreCommands>
 public:
     FTabRestoreCommands()
         : TCommands<FTabRestoreCommands>(
-            TEXT("TabRestore"),
-            NSLOCTEXT("Contexts", "TabRestore", "TabRestore Plugin"),
+            TEXT("Tab Restore"),
+            NSLOCTEXT("Contexts", "Tab Restore", "Tab Restore Plugin"),
             NAME_None,
             FEditorStyle::GetStyleSetName()
         )

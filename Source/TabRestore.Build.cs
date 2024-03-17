@@ -2,7 +2,7 @@ using UnrealBuildTool;
 
 public class TabRestore : ModuleRules
 {
-    public TabRestore(ReadOnlyTargetRules Target) : base( Target )
+    public TabRestore(ReadOnlyTargetRules Target) : base(Target)
     {
         bEnableUndefinedIdentifierWarnings = false;
         bLegacyPublicIncludePaths = false;

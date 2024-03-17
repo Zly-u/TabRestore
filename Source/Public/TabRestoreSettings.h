@@ -14,26 +14,19 @@ public:
 
 public:
     UPROPERTY(Config, EditAnywhere, BlueprintReadOnly)
-    FInputChord RestoreClosedTab = FInputChord(FKey(TEXT("T")), 
-        // shift
-        true,
-
-        // ctrl
+    FInputChord RestoreClosedTab = FInputChord(
+    	FKey(TEXT("T")),
+        true, // shift
 #if PLATFORM_MAC
-        false,
+        false, // ctrl
 #else
-        true,
+        true,  // ctrl
 #endif
-
-        // alt
-        false, 
-
-        // command
+        false, // alt
 #if PLATFORM_MAC
-        true  
+        true   // command
 #else
-        false
+        false  // command
 #endif
     );
-
 };

@@ -3,7 +3,7 @@
     "Version": 1,
     "VersionName": "1.0",
     "FriendlyName": "Tab Restore",
-    "Description": "Add ability to restore closed tabs",
+    "Description": "Adds ability to restore closed tabs",
     "MarketplaceURL": "",
     "Category": "Theliraan",
     "CreatedBy": "Theliraan",
@@ -18,7 +18,10 @@
         {
             "Name": "TabRestore",
             "Type": "Editor",
-            "LoadingPhase": "PostEngineInit"
+            "LoadingPhase": "PostEngineInit",
+			"WhitelistTargets": [
+				"Editor"
+			]
         }
     ],
     "Plugins": [

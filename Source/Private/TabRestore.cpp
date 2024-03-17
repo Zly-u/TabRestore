@@ -35,8 +35,8 @@ void FTabRestoreModule::StartupModule()
 
     if (ISettingsModule* Settings = FModuleManager::GetModulePtr<ISettingsModule>("Settings"))
     {
-        Settings->RegisterSettings("Project", "TabRestore", "TabRestore", 
-            FText::FromString(TEXT("TabRestore")),
+        Settings->RegisterSettings("Editor", "Plugins", "Tab Restore", 
+            FText::FromString(TEXT("Tab Restore")),
             FText::FromString(TEXT("TabRestore Settings")),
             GetMutableDefault<UTabRestoreSettings>()
         );
